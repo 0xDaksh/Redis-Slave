@@ -9,9 +9,9 @@ COPY docker-entrypoint.sh /usr/local/bin
 COPY run.sh /
 
 # fix permissions
-RUN chmod 777 /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
-RUN chmod 777 /run.sh
+RUN chmod +x /run.sh
 
 # set entrypoint
 ENTRYPOINT ["docker-entrypoint.sh"]
@@ -20,4 +20,4 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE 6379
 
 # run the file!
-CMD ["/run.sh"]
+CMD /run.sh
