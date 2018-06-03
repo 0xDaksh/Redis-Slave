@@ -1,4 +1,4 @@
-FROM redis:latest
+FROM redis:alpine
 
 # Set volumes up
 VOLUME /data
