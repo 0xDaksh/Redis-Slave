@@ -4,9 +4,9 @@ This container takes all the abstractions away while making a redis slave instea
 
 ### Supported Tags:
 
-- latest (uses redis:latest)
+- regular (uses redis:latest)
 - alpine (uses redis:alpine)
-
+- latest (whatever the last push is, ie: can be either latest or alpine. using this is not recommended.)
 
 ### Environment Variables:
 
